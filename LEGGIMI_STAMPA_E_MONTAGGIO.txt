@@ -4,6 +4,12 @@ Dimensioni assemblate: 410 x 520 x 7 mm.
 Ingombro massimo di ogni modulo: 205 x 174 x 7 mm.
 Importare gli STL in millimetri, scala 100%. I pezzi sono appoggiati a Z=0.
 
+STRUTTURA DEL PROGETTO
+Cartella principale: versione definitiva da 7 mm (STL, guida.html, mappa).
+prove/: provini e giunto di prova usati per tarare le sedi.
+originale/: pannello intero ricreato (410 x 520 x 10 mm), prima della divisione.
+La vecchia versione da 10 mm e stata rimossa: resta nella cronologia git.
+
 DA STAMPARE
 P01_205x172x7mm.stl: 1 copia
 P02_205x172x7mm.stl: 1 copia
@@ -39,6 +45,26 @@ Il pattern e chiuso localmente nei rinforzi, come concordato.
 
 STAMPA
 Mantenere le impostazioni dimensionali usate sul provino approvato.
+
+IMPOSTAZIONI DI STAMPA (moduli P01-P06)
+Profilo slicer: 0.20mm Standard @Flashforge AD... - PLA, ugello 0,4 mm
+Pareti
+  Wall loops: 2
+  Alternate extra wall: no
+  Detect thin walls: no
+Top/bottom
+  Top shell layers: 3 - Top shell thickness: 1 mm
+  Top surface density: 100% - Top surface pattern: Hilbert Curve
+  Bottom shell layers: 3 - Bottom shell thickness: 0 mm
+  Bottom surface density: 100% - Bottom surface pattern: Monotonic
+  Top/Bottom solid infill/wall overlap: 25%
+Infill
+  Sparse infill density: 15%
+  Fill Multiline: 1
+  Sparse infill pattern: Support Cubic
+  Sparse infill direction: 45 gradi
+Brim 2 mm, nessun supporto.
+
 I fori laterali dei moduli si stampano in orientamento diverso dai fori
 verticali dei cubi di prova: verificarne la pulizia e il primo accoppiamento.
 Il limite 210 x 210 mm riguarda il modello; su un piatto utile di 210 mm
