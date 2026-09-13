@@ -11,7 +11,7 @@ P03_205x174x7mm.stl: 1 copia
 P04_205x174x7mm.stl: 1 copia
 P05_205x174x7mm.stl: 1 copia
 P06_205x174x7mm.stl: 1 copia
-PERNO_D3.20_L15.stl: 21 copie (vedi REVISIONE PERNO)
+PERNO_D3.42_L15_stampare_21_copie.stl: 21 copie
 Il file del perno contiene UN SOLO perno, separato dai moduli.
 
 MAPPA - VISTA DEL PANNELLO, ORIENTAMENTO DEGLI STL
@@ -65,10 +65,7 @@ Verifiche: 7 STL riletti, 0 spigoli non-manifold, 0 vertici isolati,
 42 sedi ricontrollate a profondita 7,500 mm.
 
 REVISIONE PERNO (sedi invariate, gia stampate)
-Il perno D3,0 entrava ma aveva troppo gioco nelle sedi D3,4.
-Diametro aumentato con offset radiale; smussi 0,25 mm invariati, L=15 mm.
-PERNO_D3.15_L15.stl  gioco radiale nominale 0,125 mm
-PERNO_D3.20_L15.stl  gioco radiale nominale 0,100 mm  (consigliato)
-PERNO_D3.25_L15.stl  gioco radiale nominale 0,075 mm
-Stampare prima un perno per variante, provarli in una sede, poi 21 copie
-della variante migliore.
+Perno definitivo: D3,42 x L15, smussi 0,25 mm, 21 copie.
+Scelto con prove di stampa sulle sedi D3,4 gia stampate:
+D3,00-3,25 troppo lenti; D3,40 e D3,45 corretti; scelto il valore intermedio.
+Interferenza nominale 0,01 mm per lato, compensata dalle tolleranze di stampa.
