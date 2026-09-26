@@ -11,13 +11,13 @@ originale/: pannello intero ricreato (410 x 520 x 10 mm), prima della divisione.
 La vecchia versione da 10 mm e stata rimossa: resta nella cronologia git.
 
 DA STAMPARE
-P01_205x172x7mm.stl: 1 copia
-P02_205x172x7mm.stl: 1 copia
-P03_205x174x7mm.stl: 1 copia
-P04_205x174x7mm.stl: 1 copia
-P05_205x174x7mm.stl: 1 copia
-P06_205x174x7mm.stl: 1 copia
-PERNO_D3.42_L15_stampare_21_copie.stl: 21 copie
+stl/P01_205x172x7mm.stl: 1 copia
+stl/P02_205x172x7mm.stl: 1 copia
+stl/P03_205x174x7mm.stl: 1 copia
+stl/P04_205x174x7mm.stl: 1 copia
+stl/P05_205x174x7mm.stl: 1 copia
+stl/P06_205x174x7mm.stl: 1 copia
+stl/PERNO_D3.42_L15_stampare_21_copie.stl: 21 copie
 Il file del perno contiene UN SOLO perno, separato dai moduli.
 
 MAPPA - VISTA DEL PANNELLO, ORIENTAMENTO DEGLI STL
