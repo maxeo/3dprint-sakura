@@ -1,0 +1,448 @@
+{
+  "root": "..",
+  "output": "guida.html",
+  "title": "Sakura · 6 moduli · Guida",
+  "theme": {
+    "accent": "#a3456a",
+    "viewer_bg": "#221a1f"
+  },
+  "header": {
+    "eyebrow": "Sakura · pannello a 6 moduli · PLA",
+    "h1": "Sei moduli, ventuno perni.",
+    "intro_html": "<b>Moduli da 7 mm e perno definitivo Ø3,42 mm, scelto con le prove di stampa.</b> Il pannello decorativo è diviso in sei moduli, uniti da perni cilindrici infilati nelle sedi ricavate nei bordi. Prima si montano le tre coppie orizzontali, poi si impilano le righe. Le sedi dei moduli sono Ø3,4 × 7,5 mm e sono rimaste invariate; è cambiato solo il perno.",
+    "facts": [
+      {
+        "value": "410 × 520 mm",
+        "label": "pannello"
+      },
+      {
+        "value": "7 mm",
+        "label": "spessore"
+      },
+      {
+        "value": "6 moduli",
+        "label": "×1"
+      },
+      {
+        "value": "21 perni",
+        "label": "Ø3,42 × 15"
+      }
+    ]
+  },
+  "camera": {
+    "yaw": -0.5,
+    "pitch": 0.85
+  },
+  "caption": "Pannello montato, vista frontale: i perni in oro sono in posizione reale e nel pannello montato restano nascosti nelle sedi.",
+  "model_note_html": "<span class=\"badge\">Quote del modello reale</span><p><b>410 × 520 × 7 mm</b> · larghezza × altezza × spessore. Moduli 205 × 172 mm (riga superiore) e 205 × 174 mm (righe centrale e inferiore). I contorni del pattern sono ricavati dagli STL da 7 mm e semplificati a 0,12 mm per la vista.</p>",
+  "groups": {
+    "Colonna sinistra": {
+      "color": "#e5b9c1"
+    },
+    "Colonna destra": {
+      "color": "#d4bacf"
+    }
+  },
+  "parts": [
+    {
+      "id": "P01",
+      "label": "Superiore sinistro",
+      "group": "Colonna sinistra",
+      "file": "stl/P01_205x172x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        0,
+        348,
+        0
+      ]
+    },
+    {
+      "id": "P02",
+      "label": "Superiore destro",
+      "group": "Colonna destra",
+      "file": "stl/P02_205x172x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        205,
+        348,
+        0
+      ]
+    },
+    {
+      "id": "P03",
+      "label": "Centrale sinistro",
+      "group": "Colonna sinistra",
+      "file": "stl/P03_205x174x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        0,
+        174,
+        0
+      ]
+    },
+    {
+      "id": "P04",
+      "label": "Centrale destro",
+      "group": "Colonna destra",
+      "file": "stl/P04_205x174x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        205,
+        174,
+        0
+      ]
+    },
+    {
+      "id": "P05",
+      "label": "Inferiore sinistro",
+      "group": "Colonna sinistra",
+      "file": "stl/P05_205x174x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "P06",
+      "label": "Inferiore destro",
+      "group": "Colonna destra",
+      "file": "stl/P06_205x174x7mm.stl",
+      "quantity": 1,
+      "print": "moduli",
+      "mode": "extruded",
+      "translate": [
+        205,
+        0,
+        0
+      ]
+    }
+  ],
+  "connectors": {
+    "auto": true,
+    "diameter": 3.42,
+    "length": 15,
+    "label": "perno",
+    "label_plural": "perni",
+    "joint_labels": {
+      "P01+P02": "verticale · riga superiore",
+      "P03+P04": "verticale · riga centrale",
+      "P05+P06": "verticale · riga inferiore",
+      "P03+P05": "orizzontale · sinistra",
+      "P04+P06": "orizzontale · destra",
+      "P01+P03": "orizzontale · sinistra",
+      "P02+P04": "orizzontale · destra"
+    }
+  },
+  "steps_section": {
+    "eyebrow": "01 / Dalle coppie al pannello",
+    "h2": "Prima le coppie, poi le righe.",
+    "intro_html": "Pannello a faccia in su, come nella vista. ALTO è il lato di P01 e P02.",
+    "start_html": "<h3>Prima prova un perno.</h3><p>Stampa un solo perno e provalo in una sede: se stampante, filamento o profilo sono cambiati, l’accoppiamento può variare. Poi segui i passaggi: nel cursore i perni restano infilati nel modulo già posato.</p>"
+  },
+  "steps": [
+    {
+      "title": "Unisci P01 e P02",
+      "short": "3 perni · da destra",
+      "text": "Infila 3 perni nel bordo destro di P01, metà dentro (7,5 mm). Avvicina P02 da destra allineando le sedi e spingi fino a chiudere la fuga.",
+      "parts": [
+        "P01",
+        "P02"
+      ],
+      "built": [
+        "P01",
+        "P02"
+      ],
+      "moving": [
+        "P02"
+      ],
+      "dir": [
+        1,
+        0,
+        0
+      ],
+      "travel": 60,
+      "joints": [
+        "P01+P02"
+      ]
+    },
+    {
+      "title": "Unisci P03 e P04",
+      "short": "3 perni · da destra",
+      "text": "Stessa operazione per la riga centrale: 3 perni nel bordo destro di P03, poi accosta P04.",
+      "parts": [
+        "P03",
+        "P04"
+      ],
+      "built": [
+        "P03",
+        "P04"
+      ],
+      "moving": [
+        "P04"
+      ],
+      "dir": [
+        1,
+        0,
+        0
+      ],
+      "travel": 60,
+      "joints": [
+        "P03+P04"
+      ]
+    },
+    {
+      "title": "Unisci P05 e P06",
+      "short": "3 perni · da destra",
+      "text": "Riga inferiore: 3 perni nel bordo destro di P05, poi accosta P06. Ora hai tre coppie.",
+      "parts": [
+        "P05",
+        "P06"
+      ],
+      "built": [
+        "P05",
+        "P06"
+      ],
+      "moving": [
+        "P06"
+      ],
+      "dir": [
+        1,
+        0,
+        0
+      ],
+      "travel": 60,
+      "joints": [
+        "P05+P06"
+      ]
+    },
+    {
+      "title": "Riga centrale sulla inferiore",
+      "short": "6 perni · dall’alto",
+      "text": "Infila 6 perni nei bordi superiori di P05 e P06. Porta la coppia P03–P04 sopra, allinea tutte e 6 le sedi insieme e accosta in modo uniforme, senza inclinare la coppia.",
+      "parts": [
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "built": [
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "moving": [
+        "P03",
+        "P04"
+      ],
+      "dir": [
+        0,
+        1,
+        0
+      ],
+      "travel": 60,
+      "joints": [
+        "P03+P05",
+        "P04+P06"
+      ]
+    },
+    {
+      "title": "Aggiungi la riga superiore",
+      "short": "6 perni · dall’alto",
+      "text": "Infila 6 perni nei bordi superiori di P03 e P04. Accosta la coppia P01–P02 allo stesso modo, fino alla battuta.",
+      "parts": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "built": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "moving": [
+        "P01",
+        "P02"
+      ],
+      "dir": [
+        0,
+        1,
+        0
+      ],
+      "travel": 60,
+      "joints": [
+        "P01+P03",
+        "P02+P04"
+      ]
+    },
+    {
+      "title": "Controlla il pannello",
+      "short": "Fughe chiuse",
+      "text": "Appoggia il pannello su un piano: deve risultare piano, 410 × 520 mm, con tutte le fughe chiuse. Se una fuga resta aperta non forzare: stacca il modulo e controlla bave o residui nelle sedi e sui perni.",
+      "parts": [],
+      "built": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ]
+    }
+  ],
+  "map": {
+    "eyebrow": "02 / Sigle e giunti",
+    "h2": "Sei moduli, sette giunti.",
+    "cards": [
+      {
+        "title": "Pannello · vista frontale",
+        "columns": 2,
+        "top_label": "Alto",
+        "bottom_label": "Basso",
+        "ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06"
+        ],
+        "note_html": "Rosa: colonna sinistra. Lilla: colonna destra. Ogni file contiene un solo modulo, già orientato come nel pannello. <a href=\"documenti/mappa_montaggio.svg\">Apri la mappa di montaggio</a>."
+      }
+    ],
+    "joints_title": "Giunti e perni",
+    "joints_note_html": "Ogni perno entra 7,5 mm in ciascun modulo. I moduli centrali P03 e P04 hanno 9 sedi; gli altri 6."
+  },
+  "print": {
+    "eyebrow": "03 / Sei file e un perno",
+    "h2": "Lista e parametri di stampa.",
+    "common_html": "<b>Profilo comune:</b> PLA · ugello 0,4 mm · layer 0,20 mm · profilo slicer «0.20mm Standard @Flashforge AD…». Sono le impostazioni usate per Sakura: i moduli sono decorativi e poco caricati, il punto delicato sono le sedi dei perni.",
+    "profiles": [
+      {
+        "key": "moduli",
+        "title": "P01 – P06 · moduli",
+        "rows": [
+          [
+            "Orientamento",
+            "Piatti, come nel file"
+          ],
+          [
+            "Pareti",
+            "2 loop · niente parete extra alternata · thin walls off"
+          ],
+          [
+            "Top",
+            "3 layer · spessore 1 mm · densità 100% · Hilbert Curve"
+          ],
+          [
+            "Bottom",
+            "3 layer · spessore 0 mm · densità 100% · Monotonic"
+          ],
+          [
+            "Overlap solido/pareti",
+            "25%"
+          ],
+          [
+            "Infill",
+            "15% Support Cubic · 1 linea · direzione 45°"
+          ],
+          [
+            "Brim",
+            "2 mm"
+          ],
+          [
+            "Supporti",
+            "No"
+          ]
+        ],
+        "why": "205 mm + brim 2 mm per lato = 209 mm, entro un piatto utile di 210 mm. Le sedi orizzontali Ø3,4 sono ponti corti: di solito non servono supporti. Controlla nell’anteprima che non restino fili dentro le sedi.",
+        "summary": "2 pareti · 15% Support Cubic · brim 2 mm"
+      },
+      {
+        "key": "perni",
+        "title": "Perno Ø3,42 × 15 · 21 copie",
+        "rows": [
+          [
+            "Orientamento",
+            "In piedi, come nel file"
+          ],
+          [
+            "Profilo",
+            "Lo stesso delle prove"
+          ],
+          [
+            "Disposizione",
+            "21 copie distanziate"
+          ],
+          [
+            "Brim",
+            "Se si staccano"
+          ]
+        ],
+        "why": "Il diametro 3,42 è tarato sulle stampe di prova (3,40 e 3,45 corretti): cambiare orientamento, layer o compensazione XY sposta il gioco. Distanziare i perni aiuta il raffreddamento e riduce le bave.",
+        "summary": "in piedi · profilo delle prove"
+      }
+    ],
+    "extra_rows": [
+      {
+        "label": "Perno",
+        "what": "Giunti",
+        "file": "stl/PERNO_D3.42_L15_stampare_21_copie.stl",
+        "quantity": 21,
+        "dims": "3,42 × 15",
+        "print": "perni"
+      }
+    ],
+    "note_html": "Tutti gli STL sono in millimetri, appoggiati a Z = 0. Importa al 100%, senza ridimensionare."
+  },
+  "notes": {
+    "eyebrow": "04 / Il giunto",
+    "h2": "Un perno, due sedi.",
+    "nav": "Perni",
+    "cards": [
+      {
+        "title": "Sezione del giunto",
+        "html": "<p>Ogni sede è un foro Ø3,4 mm profondo 7,5 mm, con invito smussato, al centro dello spessore. Il perno da 15 mm si divide a metà tra i due moduli; le estremità smussate aiutano a imboccare le sedi.</p><svg viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Sezione di due moduli da 7 mm accostati con un perno Ø3,42 per 15 mm nelle sedi Ø3,4 per 7,5 mm\">\r\n<rect width=\"820\" height=\"300\" fill=\"#fbf6f7\" rx=\"10\"/>\r\n<rect x=\"20\" y=\"70\" width=\"390\" height=\"140\" fill=\"#e5b9c1\"/><rect x=\"410\" y=\"70\" width=\"390\" height=\"140\" fill=\"#d4bacf\"/>\r\n<path d=\"M260 106 H405 L410 101 V179 L405 174 H260 Z\" fill=\"#fbf6f7\"/><path d=\"M560 106 H415 L410 101 V179 L415 174 H560 Z\" fill=\"#fbf6f7\"/>\r\n<path d=\"M265 106 H555 L560 111 V169 L555 174 H265 L260 169 V111 Z\" fill=\"#e6b84f\" stroke=\"#8a6a1c\" stroke-width=\"2\"/>\r\n<line x1=\"410\" y1=\"60\" x2=\"410\" y2=\"220\" stroke=\"#2e2328\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/>\r\n<g font-family=\"system-ui,Segoe UI,sans-serif\" font-size=\"17\" fill=\"#2e2328\">\r\n<text x=\"140\" y=\"148\" text-anchor=\"middle\" font-weight=\"700\">P01</text><text x=\"680\" y=\"148\" text-anchor=\"middle\" font-weight=\"700\">P02</text>\r\n<text x=\"410\" y=\"146\" text-anchor=\"middle\" font-weight=\"700\">perno Ø3,42 × 15</text>\r\n<line x1=\"260\" y1=\"245\" x2=\"560\" y2=\"245\" stroke=\"#76656c\" stroke-width=\"1.5\"/><line x1=\"260\" y1=\"236\" x2=\"260\" y2=\"254\" stroke=\"#76656c\" stroke-width=\"1.5\"/><line x1=\"410\" y1=\"236\" x2=\"410\" y2=\"254\" stroke=\"#76656c\" stroke-width=\"1.5\"/><line x1=\"560\" y1=\"236\" x2=\"560\" y2=\"254\" stroke=\"#76656c\" stroke-width=\"1.5\"/>\r\n<text x=\"335\" y=\"272\" text-anchor=\"middle\">7,5 mm</text><text x=\"485\" y=\"272\" text-anchor=\"middle\">7,5 mm</text>\r\n<line x1=\"782\" y1=\"70\" x2=\"782\" y2=\"210\" stroke=\"#76656c\" stroke-width=\"1.5\"/><text x=\"772\" y=\"145\" text-anchor=\"end\">7 mm</text>\r\n<text x=\"24\" y=\"42\" font-size=\"15\">sede Ø3,4 · 1,8 mm di parete sopra e sotto</text><line x1=\"230\" y1=\"48\" x2=\"290\" y2=\"100\" stroke=\"#76656c\" stroke-width=\"1.5\"/>\r\n</g></svg><p class=\"small\">Schema non in scala per il gioco: il perno è 0,02 mm più grande della sede nominale, compensati dalle tolleranze di stampa.</p>"
+      },
+      {
+        "title": "Come si è arrivati a Ø3,42",
+        "html": "<p>Il perno originale Ø3,0 entrava ma aveva troppo gioco. Le prove successive, stampate e infilate nelle sedi già stampate, hanno dato:</p><table class=\"joints\"><thead><tr><th>Perno</th><th>Esito</th></tr></thead><tbody><tr><td>Ø3,00 – 3,25</td><td>troppo lenti</td></tr><tr><td>Ø3,30 – 3,35</td><td>non scelti</td></tr><tr><td>Ø3,40 e 3,45</td><td>corretti</td></tr><tr><td><b>Ø3,42</b></td><td><b>definitivo</b></td></tr></tbody></table><p>Stampa prima un solo perno e provalo in una sede: se la stampante, il filamento o il profilo sono cambiati, l’accoppiamento può variare.</p><p class=\"warning\"><b>Non forzare i perni con il martello.</b> Sopra e sotto ogni sede restano solo 1,8 mm di materiale (1,55 mm all’imbocco): un perno a pressione può aprire il bordo. Se un perno è duro, togli bave e residui dalla sede o carteggia leggermente il perno.</p>"
+      }
+    ]
+  },
+  "files": {
+    "h2": "I file.",
+    "intro_html": "Sei moduli, un perno da replicare 21 volte, istruzioni testuali e mappa.",
+    "links": [
+      {
+        "label": "LEGGIMI",
+        "href": "documenti/LEGGIMI_STAMPA_E_MONTAGGIO.txt"
+      },
+      {
+        "label": "Mappa di montaggio",
+        "href": "documenti/mappa_montaggio.svg"
+      },
+      {
+        "label": "Perno Ø3,42 (×21)",
+        "href": "stl/PERNO_D3.42_L15_stampare_21_copie.stl"
+      }
+    ]
+  },
+  "footer_html": "Sakura · moduli da 7 mm · perno Ø3,42 × 15 · Guida offline: funziona aprendo questo file dalla cartella degli STL."
+}
